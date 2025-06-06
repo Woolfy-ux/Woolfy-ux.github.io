@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../desafio receta"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "desafio receta"
+	}
+}

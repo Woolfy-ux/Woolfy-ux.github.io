@@ -1,0 +1,166 @@
+/* * {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+} */
+ /* esto es para reiniciar la pagina con los margenes predeterminados que tiene y todo eso. */
+h1 {
+    color:rgb(235, 151, 223); 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    font-weight:200;
+    text-align: center;
+    text-decoration: underline;
+    position: relative;
+    z-index: 10;
+}
+
+header {
+    background-color: rgb(234, 209, 255);
+    position: relative;
+    padding: 70px;
+}
+
+
+.color {
+    color:rgb(117, 112, 190);
+}
+
+.pan {
+    color:rgb(216, 153, 208)
+}
+
+
+.tipono {
+    font-family: "Edu QLD Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+nav ul li {
+    list-style: none;
+
+}
+
+footer ul li {
+    list-style: none;
+}
+
+.fondoColor {
+    background-color: rgb(193, 163, 201);
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    background-color:rgb(255, 214, 250);
+    margin-bottom: 0 auto;
+    border: solid rgb(92, 64, 41) 5px;
+    padding: 5px;
+}
+
+
+
+
+
+.origi {
+    box-sizing: border-box;
+    /* box-sizing: para que si pusimos originalmente que sea de 98x50 y le agregamos margenes, etc. siga siendo de ese tamaño pese a esos añadidos.*/
+}
+
+
+
+
+.card {
+    width: 300px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-img {
+    display: block;
+    width: 70%;
+    margin: 5px auto;
+
+}
+
+.card-title {
+    text-align: center; 
+}
+
+
+.contenedorPadre {
+    max-width: 1000px;
+    background-color:rgb(195, 199, 255);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto ;
+    justify-content: center ;
+    justify-content: space-around;
+}
+
+
+
+/*--------- grillas ----------*/
+
+
+.parent {
+    max-width: 500px;
+    margin: 5 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.div1 img {
+    width: 100%;
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+.div2 img {
+    width: 100%;
+}
+
+.div3 {
+    grid-area: 2 / 2 / 3 /3;
+ }
+
+.div3 img {
+     width: 100%;
+ }
+
+
+/*-------------------------------------*/
+
+nav a {
+    text-decoration: none;
+    color: rgb(136, 28, 109);
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/*absolute: Objeto pierde su lugar y traspasa todo.
+ relative: Se acomoda mediante las otras cosas del codigo.
+  fixed: El elemento te sigue por toda la pantalla, como con el header o nav para que puedas usarlo en todo momento.*/
+/* !important hagas lo que hagas va a tener esa caracteristica que tenga alguna cosa con una clase o #*/
+
+@media screen and (max-width: 520px) {
+
+    body {
+        background-color: rgb(255, 255, 255);
+    }}
