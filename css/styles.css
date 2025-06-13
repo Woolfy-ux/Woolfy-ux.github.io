@@ -44,8 +44,18 @@ nav ul li {
 
 }
 
+
+.lista {
+    list-style: none;
+}
+
 footer ul li {
     list-style: none;
+}
+
+.footercolor {
+    background-color: rgb(234, 209, 255);
+    color: rgb(136, 28, 109);
 }
 
 .fondoColor {
@@ -72,6 +82,24 @@ footer ul li {
 
 
 
+.alig {
+    text-align: center;
+}
+
+.card-imgdos {
+    display: block;
+    width: 20%;
+    margin: 5px auto;
+
+}
+
+.contenedornose {
+    max-width: 500;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+}
 
 .card {
     width: 300px;
@@ -159,8 +187,14 @@ nav a:hover {
   fixed: El elemento te sigue por toda la pantalla, como con el header o nav para que puedas usarlo en todo momento.*/
 /* !important hagas lo que hagas va a tener esa caracteristica que tenga alguna cosa con una clase o #*/
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 450px) {
 
     body {
         background-color: rgb(255, 255, 255);
-    }}
+    }
+
+    .card-imgdos {
+        display: block;
+        width: 65%;
+        margin: 5px auto;   }
+}
